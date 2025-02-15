@@ -73,7 +73,7 @@ h1 {
     transform: translate(-50%, 0);
 }
 .new-advice-button:hover, .new-advice-button:focus {
-    box-shadow: 0 0 15px var(--neon-green);
+    box-shadow: 0 0 30px var(--neon-green);
     cursor: pointer;
 }
 
