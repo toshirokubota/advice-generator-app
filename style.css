@@ -71,6 +71,7 @@ h1 {
     bottom: -32px;
     left: 50%;
     transform: translate(-50%, 0);
+    font-size: 0;
 }
 .new-advice-button:hover, .new-advice-button:focus {
     box-shadow: 0 0 30px var(--neon-green);
