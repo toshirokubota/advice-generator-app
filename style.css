@@ -1,0 +1,91 @@
+:root {
+    box-sizing: border-box;
+
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    
+    font-family: "Manrope", serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--dark-blue);
+    width: 100%;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+main {
+    max-width: 550px;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-grayish-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.container > * {
+    margin-top: 2rem;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 20%;
+    color: var(--neon-green);
+    font-size: 12px;
+}
+.advice-box {
+    font-size: 28px;
+    color: var(--light-cyan);
+    text-align: center;
+}
+.container > picture {
+    padding-bottom: 4rem;
+}
+.new-advice-button {
+    width: 64px;
+    height: 64px;
+    background-color: var(--neon-green);
+    color: var(--light-cyan);
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.new-advice-button:hover, .new-advice-button:focus {
+    box-shadow: 0 0 15px var(--neon-green);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 5rem;
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        justify-content: center; 
+    }
+    .advice-box {
+        padding: 0rem 3rem;
+    }
+}
